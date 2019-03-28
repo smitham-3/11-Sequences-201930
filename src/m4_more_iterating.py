@@ -222,7 +222,7 @@ def sum_sequence(sequence):
 def run_test_count_items_bigger_than():
     """ Tests the   count_items_bigger_than   function. """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # DONE: 4. Implement this TEST function.
     #   It TESTS the  count_items_bigger_than  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests.
     #
@@ -347,6 +347,21 @@ def run_test_count_items_bigger_than():
     print('  for your code (and Python\'s pseudo-random numbers).')
 
     # DONE 4 (continued):  Add your 2 ADDITIONAL tests here:
+    sequence = [-1, -2, 3, 4, -5]
+    threshold = 0
+    expected = 2
+    actual = count_items_bigger_than(sequence, threshold)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
+
+    sequence = [14, 17, 22, 3, 81, 77]
+    threshold = 30
+    expected = 2
+    actual = count_items_bigger_than(sequence, threshold)
+    print()
+    print('Test 10 expected:', expected)
+    print('       actual:  ', actual)
 
 
 def count_items_bigger_than(numbers, threshold):
